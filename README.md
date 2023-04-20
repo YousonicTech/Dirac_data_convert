@@ -8,6 +8,10 @@ config_path = r"D:\YouSonic\extract_t60\Echo_label"
 ```
 xlsx_path = r"D:\YouSonic\extract_t60\Echo_label\{}\新建 Microsoft Office Excel 工作表.xlsx".format(lst_name)
 ```
+还有save_path也可以改一下
+```
+save_path = "D:/YouSonic/wav_aug/1000_Hz/1000hz_stretch_1.6_labels_Finished_File/{}.csv".format(lst_name)
+```
 ## 2.手动修改一下生成的模板的错误
 错误的：
 
@@ -20,7 +24,7 @@ xlsx_path = r"D:\YouSonic\extract_t60\Echo_label\{}\新建 Microsoft Office Exce
 这是代码的bug，有空也可以修修。
 
 ## 3.运行csv_standard.py
-修改参数,把total_csv.csv换成moban.csv就行
+修改参数,path是第一部中的save_path,另外把total_csv.csv换成moban.csv就行
 ```
 path = "D:/YouSonic/extract_t60/Finished_File"
 
